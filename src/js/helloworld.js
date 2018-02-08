@@ -6,4 +6,4 @@ var text = document.createTextNode('Hello World');
 div.appendChild(text);
 
 // Append div to body
-document.body.appendChild(text);
+// document.body.appendChild(div);

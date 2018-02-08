@@ -1,2 +1,2 @@
-# sassy-css-grid
-Sassy CSS Grid Framework
+# Sassy CSS Grid Framework
+CSS Grid Framework with Sass

@@ -1,0 +1,17 @@
+@mixin has-padding {
+    padding: 3rem 1.5rem;
+}
+
+.has-padding {
+    padding: 3rem 1.5rem;
+}
+
+
+
+.has-padding-medium {
+    padding: 9rem 1.5rem;
+}
+
+.has-padding-large {
+    padding: 18rem 1.5rem;
+}

@@ -1,0 +1,7 @@
+@mixin has-border {
+    border: 1px solid black;
+}
+
+.has-border {
+    border: 1px solid black;
+}

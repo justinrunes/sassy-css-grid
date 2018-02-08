@@ -1,0 +1,33 @@
+// Section Name
+.section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0;
+}
+
+.collapsethis {
+    @include mobile-only {
+        @include is-col-one;
+        @include has-border;
+    }
+
+    @include tablet-up {
+        @include is-col-two;
+    }
+}
+
+.lefthello {
+    @include is-col-one;
+    
+    @include desktop-up {
+        @include has-border;
+        @include is-right;
+    }
+}
+
+.rightclassunique {
+    @include tablet-only {
+        background-color: blue;
+    }
+}

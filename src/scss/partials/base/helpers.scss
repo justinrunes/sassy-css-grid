@@ -1,0 +1,16 @@
+@mixin is-right {
+    justify-self: end;
+}
+
+.is-right {
+    justify-self: end;
+}
+
+.is-min-height {
+    min-height: 5rem;
+}
+
+.is-max-height {
+    max-height: 5rem;
+}
+

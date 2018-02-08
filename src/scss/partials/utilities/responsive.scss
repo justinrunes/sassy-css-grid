@@ -1,0 +1,73 @@
+/*
+Responsive
+*/
+
+/***************
+Breakpoints
+***************/
+$break-small: 320px;
+$break-large: 1024px;
+
+
+/***************
+Mobile and Desktop Mixin
+***************/
+@mixin mobile {
+  @media only screen and (max-width: $break-large) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $break-large) {
+    @content;
+  }
+}
+
+@media only screen and (max-width: $break-large) {
+  .page-wrapper {padding: 0px; margin: 0px;}
+}
+
+
+/***************
+Breakpoints
+***************/
+$break2-small: 320px;
+$break2-medium: 640px;
+$break2-large: 1024px;
+$break2-xlarge: 1170px;
+
+
+/***************
+Mobile and Desktop Mixin
+***************/
+@mixin mobile2 {
+  @media only screen and (max-width: $break2-medium) {
+    @content;
+  }
+}
+
+@mixin tablet2 {
+  @media only screen and (min-width: $break2-medium) and (max-width: $break2-large) {
+    @content;
+  }
+}
+
+@mixin tabletup {
+  @media only screen and (min-width: $break2-medium) {
+    @content;
+  }
+}
+
+@mixin desktop2 {
+  @media only screen and (min-width: $break2-large) {
+    @content;
+  }
+}
+
+@mixin xdesktop2 {
+  @media only screen and (min-width: $break2-xlarge) {
+    @content;
+  }
+}
+

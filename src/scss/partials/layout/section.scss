@@ -1,0 +1,15 @@
+@mixin section {
+    display: grid;
+    grid-template-columns: 1fr 1024px 1fr;
+    grid-template-areas: ". content .";
+    grid-gap: 0;
+}
+
+.section {
+    @include section;
+
+    &--contained {
+    @include section;
+       
+    }
+}

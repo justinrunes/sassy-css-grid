@@ -1,14 +1,14 @@
 @mixin is-col-one {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
 .is-col-one {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
@@ -16,14 +16,14 @@
 @mixin is-col-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
 .is-col-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
@@ -31,14 +31,14 @@
 @mixin is-col-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
 .is-col-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
@@ -46,13 +46,13 @@
 @mixin is-col-four {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }
 
 .is-col-four {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     grid-gap: 0;
 }

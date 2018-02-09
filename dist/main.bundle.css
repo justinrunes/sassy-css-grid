@@ -38,10 +38,10 @@ Responsive
 Breakpoints
 ***************/
 /***************
-Up
+Views up
 ***************/
 /***************
-Down
+Views down
 ***************/
 /***************
 Only
@@ -49,26 +49,128 @@ Only
 .is-col-one {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-gap: 0; }
+  grid-template-rows: repeat(1, auto); }
 
 .is-col-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-gap: 0; }
+  grid-template-rows: repeat(1, auto); }
 
 .is-col-three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-gap: 0; }
+  grid-template-rows: repeat(1, auto); }
 
 .is-col-four {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-gap: 0; }
+  grid-template-rows: repeat(1, auto); }
+
+/*
+Colors
+*/
+html {
+  background-color: white;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility; }
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block; }
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace; }
+
+body {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5; }
+
+a {
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none; }
+  a strong {
+    color: currentColor; }
+  a:hover {
+    color: #363636; }
+
+code {
+  background-color: whitesmoke;
+  color: #ff3860;
+  font-size: 0.875em;
+  font-weight: normal;
+  padding: 0.25em 0.5em 0.25em; }
+
+hr {
+  background-color: #dbdbdb;
+  border: none;
+  display: block;
+  height: 1px;
+  margin: 1.5rem 0; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline; }
+
+small {
+  font-size: 0.875em; }
+
+span {
+  font-style: inherit;
+  font-weight: inherit; }
+
+strong {
+  color: #363636;
+  font-weight: 700; }
+
+pre {
+  background-color: whitesmoke;
+  color: #4a4a4a;
+  font-size: 0.875em;
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem;
+  white-space: pre;
+  word-wrap: normal; }
+  pre code {
+    background-color: transparent;
+    color: currentColor;
+    font-size: 1em;
+    padding: 0; }
+
+table
+td,
+th {
+  text-align: left;
+  vertical-align: top; }
+
+th {
+  color: #363636; }
 
 .is-text-centered {
   text-align: center; }
@@ -91,6 +193,9 @@ Only
 .has-padding {
   padding: 3rem 1.5rem; }
 
+.has-padding-small {
+  padding: 1rem 1.5rem; }
+
 .has-padding-medium {
   padding: 9rem 1.5rem; }
 
@@ -102,22 +207,148 @@ Only
 
 .section {
   display: grid;
-  grid-template-columns: 1fr 1024px 1fr;
-  grid-template-areas: ". content .";
-  grid-gap: 0; }
-  .section--contained {
+  grid-template-columns: 1fr;
+  grid-template-areas: "module"; }
+  .section--container {
     display: grid;
-    grid-template-columns: 1fr 1024px 1fr;
-    grid-template-areas: ". content .";
-    grid-gap: 0; }
+    grid-template-columns: 1fr;
+    grid-template-areas: "module";
+    grid-template-columns: 1fr minmax(auto, 1024px) 1fr;
+    grid-template-areas: ". module ."; }
+
+li + li {
+  margin-top: 0.25em; }
+
+p,
+dl,
+ol,
+ul,
+blockquote,
+pre,
+table {
+  margin-bottom: 1em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: bold;
+  font-weight: normal;
+  line-height: 1.125; }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 0.5714em; }
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.6666em; }
+
+h4 {
+  font-size: 1.25em;
+  margin-bottom: 0.8em; }
+
+h5 {
+  font-size: 1.125em;
+  margin-bottom: 0.8888em; }
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 1em; }
+
+blockquote {
+  background-color: black;
+  border-left: 5px solid blue;
+  padding: 1.25em 1.5em; }
+
+ol {
+  list-style: decimal outside;
+  margin-left: 2em;
+  margin-top: 1em; }
+
+ul {
+  list-style: disc outside;
+  margin-left: 2em;
+  margin-top: 1em; }
+  ul ul {
+    list-style-type: circle;
+    margin-top: 0.5em; }
+  ul ul {
+    list-style-type: square; }
+
+dd {
+  margin-left: 2em; }
+
+pre {
+  overflow-x: auto;
+  padding: 1.25em 1.5em;
+  white-space: pre;
+  word-wrap: normal; }
+
+sup,
+sub {
+  font-size: 75%; }
 
 .hero {
-  grid-area: content; }
-  .hero--three-block-layout {
-    grid-area: content; }
-
-.moduleid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-gap: 0; }
+  grid-template-columns: 1fr;
+  grid-area: module; }
+  @media only screen and (min-width: 480px) {
+    .hero {
+      grid-template-areas: "content"; } }
+  @media only screen and (max-width: 480px) {
+    .hero {
+      grid-template-areas: none; } }
+  .hero .block {
+    padding: 3rem 1.5rem; }
+
+.hero--three {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: module;
+  grid-gap: 1rem; }
+  @media only screen and (min-width: 480px) {
+    .hero--three {
+      grid-template-areas: "content"; } }
+  @media only screen and (max-width: 480px) {
+    .hero--three {
+      grid-template-areas: none; } }
+  .hero--three .block {
+    padding: 3rem 1.5rem; }
+  @media only screen and (min-width: 480px) {
+    .hero--three {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, auto);
+      grid-template-columns: repeat(1, minmax(2fr 1fr, 15vw));
+      grid-template-rows: repeat(2, minmax(100px, 200px));
+      grid-template-areas: "left left rt" "left left rb"; } }
+  @media only screen and (max-width: 480px) {
+    .hero--three {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, auto);
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, minmax(100px, 200px));
+      grid-template-areas: none; } }
+  .hero--three .block {
+    padding: 1rem 1.5rem; }
+  .hero--three .left {
+    background-color: #3273dc; }
+    @media only screen and (min-width: 480px) {
+      .hero--three .left {
+        grid-area: left; } }
+  .hero--three .rt {
+    background-color: #3273dc; }
+    @media only screen and (min-width: 480px) {
+      .hero--three .rt {
+        grid-area: rt; } }
+  @media only screen and (min-width: 480px) {
+    .hero--three .rb {
+      grid-area: rb; } }

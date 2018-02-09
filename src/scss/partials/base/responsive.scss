@@ -12,7 +12,7 @@ $break-widescreen: 1224px;
 
 
 /***************
-Up
+Views up
 ***************/
 // Tablet, Desktop, and Widescreen
 @mixin tablet-up {
@@ -29,7 +29,7 @@ Up
 }
 
 /***************
-Down
+Views down
 ***************/
 // Tablet and Mobile
 @mixin tablet-down {

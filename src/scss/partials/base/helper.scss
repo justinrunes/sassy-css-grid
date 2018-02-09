@@ -60,6 +60,18 @@
 }
 
 
+@mixin has-padding-small {
+    padding: 1rem 1.5rem;
+}
+
+.has-padding-small {
+    padding: 1rem 1.5rem;
+}
+
+
+@mixin has-padding-medium {
+    padding: 9rem 1.5rem;
+}
 
 .has-padding-medium {
     padding: 9rem 1.5rem;

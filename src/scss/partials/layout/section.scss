@@ -1,15 +1,16 @@
 @mixin section {
     display: grid;
-    grid-template-columns: 1fr 1024px 1fr;
-    grid-template-areas: ". content .";
-    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "module";
 }
 
 .section {
     @include section;
 
-    &--contained {
-    @include section;
-       
+    &--container {
+        @include section;
+        grid-template-columns: 1fr minmax(auto, 1024px) 1fr;
+        grid-template-areas: ". module .";
+
     }
 }

@@ -1,9 +1,24 @@
+// Default Hero
+@mixin hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: module;
+    
+    @include tablet-up {
+        grid-template-areas: "content";
+    }
+    @include mobile-only {
+        grid-template-areas: none;
+    }
 
-.hero {
-    grid-area: content;
-
-    &--three-block-layout {
-        grid-area: content;
-        
+    .block {
+        @include has-padding;
     }
 }
+
+// Class name
+.hero {
+    @include hero;
+}
+
+

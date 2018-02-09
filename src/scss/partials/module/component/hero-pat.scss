@@ -1,0 +1,57 @@
+// Hero on Patient Homepage
+@mixin hero--three {
+    @include hero;
+    grid-gap: 1rem;
+        
+    @include tablet-up {
+        @include is-col-three;
+        grid-template-columns: repeat(1, minmax(2fr 1fr, 15vw));
+        grid-template-rows: repeat(2, minmax(100px, 200px));
+        grid-template-areas: "left left rt"
+        "left left rb";
+    }
+    @include mobile-only {
+        @include is-col-one;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(100px, 200px));
+        grid-template-areas: none;
+    }
+
+    .block {
+        @include has-padding-small;
+    }
+
+
+    .left {
+        @include tablet-up {
+            grid-area: left;
+        }
+        @include mobile-only {
+        }
+
+        background-color: $blue;
+    }
+
+    .rt {
+        @include tablet-up {
+            grid-area: rt;
+        }
+        @include mobile-only {
+        }
+
+        background-color: $blue;
+    }
+
+    .rb {
+        @include tablet-up {
+            grid-area: rb;
+        }
+        @include mobile-only {
+        }
+    }
+}
+
+// Class name
+.hero--three {
+    @include hero--three;
+}

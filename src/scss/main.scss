@@ -6,6 +6,9 @@
 @import "partials/base/reset";
 @import "partials/base/responsive";
 @import "partials/base/grid";
+@import "partials/base/initial-vars";
+@import "partials/base/derived-vars";
+@import "partials/base/base";
 @import "partials/base/helper";
 
 // Layout
@@ -15,10 +18,7 @@
 @import "partials/layout/site";
 
 // Modules
-@import "partials/module/component/hero";
-
-@import "partials/module/moduleid";
-
+@import "partials/module/includes";
 
 
 // State
